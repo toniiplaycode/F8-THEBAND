@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="icon" href="https://static.vecteezy.com/system/resources/thumbnails/000/421/044/small/Multimedia__28117_29.jpg" type="image/x-icon"/>
+    <title>THE BAND</title>
+</head>
+<body>
+    <div id="main">
+        <div id="header">
+            <ul id="nav">
+                <li><a href="#">Home</a></li>
+                <li><a href="#band">Band</a></li>
+                <li><a href="#tour">Tour</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li>
+                    <a href="#">
+                        More
+                        <i class="nav__arrow-down fas fa-sort-down"></i>
+                    </a>
+                    <ul class="subnav">
+                        <li><a href="#">Merchandise</a></li>
+                        <li><a href="#">Extras</a></li>
+                        <li><a href="#">Media</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="header__search">
+                <a href="#"><i class="search-icon fas fa-search"></i></a>
+            </div>
+            <!-- khi responsive mobile mới hiện -->
+            <div id="mobile-menu" class="mobile-menu-btn">
+                <i class="menu-icon fas fa-bars"></i>
+            </div>
+        </div>
+
+        <div id="slider">
+            <div class="slider-content">
+                <div class="slider-text">
+                    <h3>Los Angeles</h3>
+                    We had the best time playing at Venice Beach!
+                </div>
+            </div>
+        </div>
+
+        <div id="content">
+            <!-- about section -->
+            <div id="band" class="content-section">
+                <h2 class="section-heading">THE BAND</h2>
+                <p class="section-sub-heading">We love music</p>
+                <p class="about-text">
+                    We have created a fictional band website. Lorem ipsum dolor sit  amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+                <div class="row member-list">
+                    <div class="col col-third s-col-full mt-32 text-center">
+                        <p class="member-name">Name</p>
+                        <img src="https://www.w3schools.com/w3images/bandmember.jpg" alt="" class="member-img">
+                    </div>
+                    <div class="col col-third s-col-full mt-32 text-center">
+                        <p class="member-name">Name</p>
+                        <img src="https://www.w3schools.com/w3images/bandmember.jpg" alt="" class="member-img">
+                    </div>
+                    <div class="col col-third s-col-full mt-32 text-center">
+                        <p class="member-name">Name</p>
+                        <img src="https://www.w3schools.com/w3images/bandmember.jpg" alt="" class="member-img">
+                    </div>
+                </div>
+            </div>
+            
+            <!-- tour section -->
+            <div class="tour-section">
+                <div id="tour" class="content-section">
+                    <h2 class="section-heading text-white">TOUR DATES</h2>
+                    <p class="section-sub-heading text-white">Remember to book your tickets!</p>
+
+                    <ul class="ticket-list">
+                        <li>
+                            September
+                            <span class="sold-out">Sold out</span>
+                        </li>
+                        <li>
+                            October
+                            <span class="sold-out">Sold out</span>
+                        </li>
+                        <li>
+                            November
+                            <span class="quantity">3</span>
+                        </li>
+                    </ul>
+
+                    <div class="row place-list">
+                        <div class="col col-third s-col-full mt-16">
+                            <img src="/assets/img/newyork.jpg" alt="new york" class="place-img">
+                            <div class="place-body">
+                                <h3 class="place-heading">New York</h3>
+                                <p class="place-time">Fri 27 Nov 2016</p>
+                                <p class="place-desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                                <!-- js-buy-ticket: nút JS hiện modal -->
+                                <button class="btn js-buy-ticket s-full-width">Buy Tickets</button>
+                            </div>
+                        </div>
+                        <div class="col col-third s-col-full mt-16">
+                            <img src="/assets/img/paris.jpg" alt="pa ris" class="place-img">
+                            <div class="place-body">
+                                <h3 class="place-heading">Paris</h3>
+                                <p class="place-time">Sat 28 Nov 2016</p>
+                                <p class="place-desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                                <!-- js-buy-ticket: nút JS hiện modal -->
+                                <button class="btn js-buy-ticket s-full-width">Buy Tickets</button>
+                            </div>
+                        </div>
+                        <div class="col col-third s-col-full mt-16"> 
+                            <img src="/assets/img/sanfran.jpg" alt="san fran" class="place-img">
+                            <div class="place-body">
+                                <h3 class="place-heading">San Francisco</h3>
+                                <p class="place-time">Sun 29 Nov 2016</p>
+                                <p class="place-desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                                <!-- js-buy-ticket: nút JS hiện modal -->
+                                <button class="btn js-buy-ticket s-full-width">Buy Tickets</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>      
+
+            <!-- contact section -->
+            <div id="contact" class="content-section">
+                <h2 class="section-heading">CONTACT</h2>
+                <p class="section-sub-heading">Fan? Drop a note!</p>
+            
+                <div class="row contact-content">
+                    <div class="col col-half s-col-full contact-info">
+                        <p><i class="fas fa-map-marker-alt"></i>Chicago, US</p>
+                        <p><i class="fas fa-phone-alt"></i>Phone: <a href="tel:+00 151515">+00 151515</a></p>
+                        <p><i class="fas fa-envelope"></i>Email: <a href="mailto:mail@mail.com">mail@mail.com</a></p>
+                    </div>
+                    <div class="col col-half s-col-full contact-form">
+                        <form action="">
+                            <div class="row">
+                                <div class="col col-half s-col-full">
+                                    <input type="text" required class="form-control" placeholder="Name">
+                                </div>
+                                <div class="col col-half s-col-full s-mt-8">
+                                    <input type="email" required class="form-control" placeholder="Email">
+                                </div>
+                            </div>
+                            <div class="row mt-8">
+                                <div class="col col-full">
+                                    <input type="text" required class="form-control" placeholder="Message">
+                                </div>
+                            </div>
+                            <input class="btn pull-right s-full-width mt-16" type="submit" value="SEND">
+                        </form>
+                    </div>
+                </div>
+            </div>  
+            <div class="map-section">
+                <img src="https://www.w3schools.com/w3images/map.jpg" alt="">
+            </div>
+        </div>
+
+        <div id="footer">
+            <div class="socials-list">
+                <a href=""><i class="fab fa-facebook-square"></i></a>
+                <a href=""><i class="fab fa-instagram"></i></a>
+                <a href=""><i class="fab fa-snapchat"></i></a>
+                <a href=""><i class="fab fa-pinterest-p"></i></a>
+                <a href=""><i class="fab fa-twitter"></i></a>
+                <a href=""><i class="fab fa-linkedin-in"></i></a>
+            </div>
+            <p class="copyright">
+                Powered by <a href="">w3.css</a>
+            </p>
+        </div>
+    </div>
+
+    <!-- JS mobile navbar -->
+    <script>
+        // --đóng/mở menu--
+        // lấy element có id là header
+        var header = document.getElementById('header');
+        // lấy element có id là mobileMenu
+        var mobileMenu = document.getElementById('mobile-menu');
+        // lấy height hiện tại của header 
+        var headerHeight = header.clientHeight;
+
+        // function sẽ được thực hiện khi click vào biến mobileMenu
+        mobileMenu.onclick = function(){
+            // biến isClosed sẽ nhận giá trị true hoặc false 
+            var isClosed = header.clientHeight === headerHeight;
+            if(isClosed){
+                // khi isClosed là true thì height sẽ đổi thành auto để hiện ra các menu
+                header.style.height = 'auto';
+            }else{
+                // ngược lại khi isClosed là false thì height sẽ thành null và sử dụng lại giá trị height ban đầu để ẩn đi menu
+                header.style.height = null;   
+            }
+        }
+
+        // --tự động đóng khi chọn 1 menu-- 
+        var menuItems = document.querySelectorAll('#nav li a[href*="#"]');
+        // dùng vòng lặp để lấy từng sự kiện của mỗi thẻ a, menuItems.length là độ dài của mảng (số lượng thẻ a)
+        for(var i = 0; i < menuItems.length; i++){
+            // lấy ra từng thẻ a trong mảng
+            var menuItem = menuItems[i];
+
+            // khi click vào thẻ a nào thì nó sẽ ẩn menu luôn (giống w3school)
+            // khi click vào thì nó sẽ thực hiện function và trả về một event
+            menuItem.onclick = function(event){ 
+                // biến isParentMenu sẽ nhận giá trị true hoặc false sau khi 2 biểu thức so sánh
+                // this: là lấy chính cái element khi click
+                // this.nextElementSibling: các thẻ anh em tiếp theo của thẻ từng a
+                // this.nextElementSibling.classList.contains('subnav'): các thẻ anh em tiếp theo của thẻ từng a có class là navbar
+                // --> nếu 2 biểu thức đúng thì isParentMenu là true
+                var isParentMenu = this.nextElementSibling && this.nextElementSibling.classList.contains('subnav');
+
+                if(isParentMenu){
+                    // nếu isParentMenu true thì navbar "MORE" sẽ đứng yên lại khi click vào và không bị mất menu
+                    // preventDefault(): ngăn chặn các thuộc tính mặc định trong thẻ a
+                    event.preventDefault();
+                }else{
+                    // ngược lại isParentMenu false thì menu sẽ ẩn đi sau khi click vào
+                    header.style.height = null;   
+                }
+            } 
+        }
+
+    </script>
+
+    <!-- js-modal: class dùng trong JS -->
+    <div class="modal   -modal">
+        <!-- js-modal-container: class dùng trong JS -->
+        <div class="modal-container js-modal-container">
+            <!-- js-modal-close: class dùng trong JS -->
+            <div class="modal-close js-modal-close">
+                <i class="fas fa-times"></i>
+            </div>
+
+            <header class="modal-header">
+                <i class="fas fa-suitcase"></i>
+                Tickets
+            </header>
+
+            <div class="modal-body">
+                <!-- for='quantity' khi click chuột vào có thì id của input sẽ được click -->
+                <label for="quantity-tickets" class="modal-label">
+                    <i class="fas fa-shopping-cart"></i>
+                    Tickets, $15 per person
+                </label>
+                <input id="quantity-tickets" type="text" class="modal-input" placeholder="How many?">
+                <label for="send-to-email" class="modal-label">
+                    <i class="fas fa-user"></i>
+                    Send To
+                </label>
+                <input id="send-to-email" type="text" class="modal-input" placeholder="Enter email">
+
+                <button class="buy-ticket">
+                    PAY
+                    <i class="fas fa-check"></i>
+                </button>
+            </div>
+
+            <footer class="modal-footer">
+                <p class="modal-help">
+                    Need <a href="#">help?</a> 
+                </p>
+            </footer>
+        </div>
+    </div>
+
+    <!-- JS modal -->
+    <script>
+        // khai báo biến để lấy ra 3 cái nút
+        const buyBtns = document.querySelectorAll('.js-buy-ticket')
+        // khai báo biến để lấy thẻ có class là js-modal (div tổng của modal)
+        const modal = document.querySelector('.js-modal')
+        // khai báo biến để lấy thẻ có class là js-modal-close
+        const modalClose = document.querySelector('.js-modal-close')
+        // khai báo biến để lấy thẻ có class là js-modal-container
+        const modalContainer = document.querySelector('.js-modal-container')
+
+        // hàm sử lý hiện modal khi bắt được sự kiện
+        function showBuyTickets(){
+            // classList: hàm quản lý danh sách class của JS
+            // add: thêm 1 class nào đó vào
+            // class open mình đã css có sẵn bên file css
+            modal.classList.add('open')
+            // --> khi hàm showBuyTickets kích hoạt thì nó sẽ thêm class open vào thẻ modal
+        }
+
+         // hàm sử lý ẩn modal khi bắt được sự kiện
+        function hideBuyTickets(){
+            // remove: gở 1 class nào đó 
+            modal.classList.remove('open')
+            // --> khi hàm hideBuyTickets kích hoạt thì nó sẽ gở class open trong thẻ modal
+        }
+
+        // dùng vòng lặp để lấy ra từng nút, tạo biến buyBtn để lưu lần lượt từng nút buyBtns
+        for(const buyBtn of buyBtns){
+            // bắt sự kiện khi nút được click sau đó dùng hàm để sử lý 
+            buyBtn.addEventListener('click', showBuyTickets)
+        }
+
+        // bắt sự kiện khi nút được click sau đó dùng hàm để sử lý
+        modalClose.addEventListener('click', hideBuyTickets)
+    
+        // ẩn modal khi click ra ngoài modal (background đen mờ mờ)
+        // modal.addEventListener('click', hideBuyTickets) -> cách này không ổn vì khi click vào modal-cotainer thì nó cũng sẽ bị ẩn (sự kiển nổi bọt, khi các thẻ con của thẻ cha khi được click thì sự kiên đó sẽ cũng ảnh hưởng lên thẻ cha)
+
+        // vẫn dùng cách trên nhưng kết hợp với function ngăn chặn nổi bọt bên dưới
+        modal.addEventListener('click', hideBuyTickets)
+        // dùng function(event nữa học js mới hiểu rõ) trong bắt sự kiện luôn, khỏi cần tạo ở ngoài. Cách này khắc phục sự kiện nổi bọt ra thẻ cha (class modal)
+        // event trong function là khi function được kích hoạt và sử lý xong, sau đó function sẽ trả về 1 event nào đó        
+        modalContainer.addEventListener('click', function (event) {
+            // sự kiện nổi bọt tới thẻ modal-container rồi dừng, chứ không nổi bọt ra tận thẻ cha (modal)
+            event.stopPropagation()
+        })
+
+    </script>
+
+</body>
+</html>

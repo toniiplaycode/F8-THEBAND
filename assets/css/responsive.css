@@ -1,0 +1,94 @@
+/* PC: >= 1024px */
+@media (min-width: 1024px){ /* BREAK POINT */
+
+}
+
+/* Tablet: >= 740px  & < 1024px */
+@media (min-width: 740px) and (max-width: 1023px){ /* BREAK POINT */
+
+}
+
+/* Tablet & Mobile */
+/* các nút và input phải đặt độ to tầm 45-48px mới dễ bấm */
+@media (max-width: 1023px){ /* BREAK POINT */
+    /* tăng độ to của nút lên cho người dùng tablet và mobile dễ bấm hơn */
+    .btn{
+        padding: 15px 16px;
+    }
+
+    .contact-form .form-control{
+        padding: 15px;
+    }
+
+    .contact-info{
+        line-height: 2;
+    }
+
+    .socials-list a{
+        margin: 0 8px;
+    }
+}
+
+
+/* Mobile: < 740px */
+@media (max-width: 739px){ /* BREAK POINT */
+    /* size s là mobile */
+    .s-full-width{
+        width: 100% !important;
+    }
+
+    .s-col-full{
+        width: 100% !important;
+    }
+
+    .s-mt-8{
+        margin-top: 8px !important;
+    }
+
+    #header{
+        overflow: hidden;
+    }
+
+    .mobile-menu-btn{
+        display: block;
+    }
+
+    .header__search{
+        /* ẩn nút search */
+        display: none;
+    }
+
+    #nav{
+        /* PC - Table là inline-block nên các menu sẽ không chiếm hết chiều ngang, dùng block để các menu có thể chiếm hết chiều ngang*/
+        display: block;
+    }
+
+    #nav > li{
+        /* PC - Table là inline-block (chiều ngang) còn giờ bên mobile là chiều dọc(block) */
+        display: block;
+    }
+
+    /* thẻ li con đầu tiên là "HOME" bị ảnh hưởng display: block của css ở trên nên nó bị chiếm hết chiều ngang, nên giờ dùng selector first-child để lấy lấy nó ra và dùng display: inline-block để nó chỉ chiếm đúng theo padding */
+    #nav > li:first-child{
+        display: inline-block;
+    }
+
+    #nav .subnav{
+        /* thuộc tính mặc định của position */
+        position: initial;
+        background: #333;
+    }
+
+    #nav .subnav a{
+        color: white !important;
+        padding: 0 40px;
+    }
+
+    .member-img{
+        width: 60%;
+    }
+
+    .contact-form{
+        margin-top: 16px;
+    }
+}
